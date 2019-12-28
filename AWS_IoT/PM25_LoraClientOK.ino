@@ -1,4 +1,3 @@
-// for 台灣大學講課 LoraWAN
 #include <Wire.h>
 #include <SPI.h>
 //#include <RH_RF95.h>
@@ -33,27 +32,10 @@ float offTime=9680;
 void setup() {
    pinMode(ledPower,OUTPUT);
    pinMode(dustPin, INPUT);
-//   lcd.init();
-//   // Turn on the blacklight and print a message.
-//   lcd.backlight();
-//   lcd.setCursor(0,0);
-//   lcd.print("Dragino  Shield");
-//   lcd.setCursor(0,1);
-//   lcd.print("III Lora Client ");
+
    //====================================
   Serial.begin(115200);
-  //while (!Serial) ; // Wait for serial port to be available
-//  if (!rf95.init())
-//  {
-//   Serial.println("init failed");  
-//    lcd.setCursor(0,0);
-//    lcd.print("init failed        ");   
-//  }
-//  else
-//  {
-//    lcd.setCursor(0,0);
-//    lcd.print("init succeeded        ");     
-//  }
+
 
 }
 void loop()
@@ -89,51 +71,7 @@ void loop()
            {
              data[i] = total_countString.charAt(i);
             }
-  //==============
-//  rf95.send(data, sizeof(data));
-//   lcd.clear();
-//   lcd.print("Send Data ...");
-//  rf95.waitPacketSent();
-  // Now wait for a reply
-//  uint8_t buf[RH_RF95_MAX_MESSAGE_LEN];
-//  uint8_t len = sizeof(buf);
 
-//  if (rf95.waitAvailableTimeout(3000))
-//  { 
-//    // Should be a reply message for us now   
-//    if (rf95.recv(buf, &len))
-//   {
-//      Serial.print("got reply: ");
-//      Serial.println((char*)buf);
-//     // =========optional   added 2/9/2017 ========
-//      String lineOut= (char*)buf;
-//      lineOut= lineOut+ "                         ";
-//      String Line0  = lineOut.substring(0,15);
-//      String Line1  = "Rx:"+lineOut.substring(19,42);     
-//      int rssiRev = rf95.lastRssi();
-////      lcd.setCursor(0,0);
-////      lcd.print("Tx:");    
-////      lcd.print(counter,DEC);    
-////      lcd.print(" RSSI= ");
-////      lcd.print(rssiRev,DEC);   
-////      lcd.setCursor(0,1);
-////      lcd.print(Line1);  
-////      Serial.print("RSSI: ");
-////      Serial.println(rf95.lastRssi(), DEC);    
-//    }
-//    else
-//    {
-//      Serial.println("recv failed");
-//    }
-//  }
-//  else
-//  {
-//    Serial.println("No reply, is rf95_server running?");
-////     lcd.setCursor(0,0);
-////     lcd.print("No reply,");
-////     lcd.setCursor(0,1);
-////     lcd.print("Server not running?");    
-//  }
   delay(4000);
   counter++;
 }
