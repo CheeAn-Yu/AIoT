@@ -25,4 +25,4 @@
 
 ### 網頁中心動態管理給藥流程
 * 所有過程將記錄在雲端Database裡，並及時將資訊更新到管理者的網頁上
-![](https://imgur.com/xGJEAaM)
+![](https://i.imgur.com/xGJEAaM.png)
