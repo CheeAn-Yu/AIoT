@@ -11,7 +11,7 @@
 
 ## Our Solution
 ### 三層加密系統:
-1. 強化藥櫃車的移動性(SLAM)
+1. 強化藥櫃車的移動性(SLAM) reference lzrobot project
     * 透過 simultaneouly localization and mapping 技術 encode 位置資訊
 2. 病人ID 影像加密
     * 透過QR code 與 computer vision encode 病人ID與藥品對資訊
